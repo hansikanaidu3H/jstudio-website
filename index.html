@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -21,20 +22,16 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-studio-dark text-white font-sans antialiased overflow-hidden">
+<body class="bg-studio-dark text-white font-sans antialiased">
 
 
 <!-- Loader -->
 <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-studio-dark transition-opacity duration-1000">
-
 <div class="flex flex-col items-center">
-
 <div class="w-16 h-16 border-t-2 border-r-2 border-studio-gold rounded-full animate-spin"></div>
-
 <h1 class="mt-6 font-serif text-2xl tracking-widest text-studio-gold">
 J STUDIO
 </h1>
-
 </div>
 </div>
 
@@ -47,17 +44,11 @@ J STUDIO
 </a>
 
 <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
-
 <a href="#about" class="hover:text-studio-gold transition-colors">About</a>
-
 <a href="#services" class="hover:text-studio-gold transition-colors">Services</a>
-
 <a href="#gallery" class="hover:text-studio-gold transition-colors">Gallery</a>
-
 <a href="#reviews" class="hover:text-studio-gold transition-colors">Reviews</a>
-
 <a href="#booking" class="hover:text-studio-gold transition-colors">Book</a>
-
 </div>
 
 <button id="mobile-menu-btn" class="md:hidden text-white">
@@ -71,12 +62,10 @@ J STUDIO
 <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
 
 <div class="absolute inset-0 z-0">
-
 <div class="absolute inset-0 bg-black/60 z-10"></div>
 
 <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=2000&q=80"
 class="w-full h-full object-cover scale-105">
-
 </div>
 
 <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
@@ -112,51 +101,26 @@ The <span class="italic text-studio-gold">Gallery</span>
 </h2>
 
 <p class="text-gray-400 tracking-wide">
-
 Follow us on Instagram 
-
 <a href="https://www.instagram.com/jstudio_vizag/?hl=en"
 target="_blank"
 class="text-studio-gold hover:underline">
-
 @jstudio_vizag
-
 </a>
-
 </p>
 
 </div>
 
-
 <div id="gallery-grid" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
-
 <iframe src="https://www.instagram.com/p/DV0-uATiTKt/embed"
-width="100%"
-height="480"
-frameborder="0"
-scrolling="no"
-allowtransparency="true">
-</iframe>
-
+width="100%" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 <iframe src="https://www.instagram.com/p/DVvFuJzCbdF/embed"
-width="100%"
-height="480"
-frameborder="0"
-scrolling="no"
-allowtransparency="true">
-</iframe>
-
+width="100%" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 <iframe src="https://www.instagram.com/p/DTvOE8bE2PM/embed"
-width="100%"
-height="480"
-frameborder="0"
-scrolling="no"
-allowtransparency="true">
-</iframe>
-
+width="100%" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 </div>
 
@@ -168,33 +132,26 @@ allowtransparency="true">
 
 <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
 
-
 <div>
 
 <h2 class="font-serif text-4xl mb-8">
 Find <span class="italic text-studio-gold">Us</span>
 </h2>
 
-
 <div class="flex items-start gap-4 mb-6">
 
 <i data-lucide="phone" class="w-6 h-6 text-studio-gold shrink-0 mt-1"></i>
 
 <div>
-
 <h4 class="font-serif text-xl mb-2">Contact</h4>
 
 <a href="tel:+919882689999"
 class="text-gray-400 font-light hover:text-studio-gold">
-
 +91 98826 89999
-
 </a>
 
 </div>
-
 </div>
-
 
 </div>
 
@@ -212,11 +169,9 @@ loading="lazy">
 
 </div>
 
-
 </div>
 
 </section>
-
 
 
 <!-- Footer -->
@@ -234,9 +189,7 @@ J STUDIO
 Elevating beauty through artistry, luxury, and personalized care in Visakhapatnam.
 </p>
 
-
 <div class="flex gap-4">
-
 
 <a href="https://www.instagram.com/jstudio_vizag/?hl=en"
 target="_blank"
@@ -245,7 +198,6 @@ class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-c
 <i data-lucide="instagram" class="w-4 h-4"></i>
 
 </a>
-
 
 </div>
 
@@ -256,18 +208,24 @@ class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-c
 </footer>
 
 
+<!-- WhatsApp Floating Button -->
 <a href="https://wa.me/919882689999"
 target="_blank"
-class="fixed bottom-6 right-6 z-40 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center">
+class="fixed bottom-6 right-6 z-40 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
 
-WhatsApp
+<i data-lucide="message-circle"></i>
 
 </a>
 
 
 <script src="//www.instagram.com/embed.js"></script>
 
+<script>
+lucide.createIcons();
+</script>
+
 <script type="module" src="main.js"></script>
 
 </body>
 </html>
+```
