@@ -1,277 +1,273 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J Studio Luxury Beauty Studio | Visakhapatnam</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J Studio Luxury Beauty Studio | Visakhapatnam</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-studio-dark text-white font-sans antialiased overflow-hidden">
-    
-    <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-studio-dark transition-opacity duration-1000">
-        <div class="flex flex-col items-center">
-            <div class="w-16 h-16 border-t-2 border-r-2 border-studio-gold rounded-full animate-spin"></div>
-            <h1 class="mt-6 font-serif text-2xl tracking-widest text-studio-gold">J STUDIO</h1>
-        </div>
-    </div>
 
-    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-6 px-8 flex justify-between items-center bg-transparent">
-        <a href="#" class="font-serif text-2xl tracking-widest text-white hover:text-studio-gold transition-colors">J STUDIO</a>
-        <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
-            <a href="#about" class="hover:text-studio-gold transition-colors">About</a>
-            <a href="#services" class="hover:text-studio-gold transition-colors">Services</a>
-            <a href="#gallery" class="hover:text-studio-gold transition-colors">Gallery</a>
-            <a href="#reviews" class="hover:text-studio-gold transition-colors">Reviews</a>
-            <a href="#booking" class="hover:text-studio-gold transition-colors">Book</a>
-        </div>
-        <button id="mobile-menu-btn" class="md:hidden text-white">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-    </nav>
 
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-studio-dark transform translate-x-full transition-transform duration-500 flex flex-col items-center justify-center space-y-8 text-xl tracking-widest uppercase font-serif">
-        <button id="close-menu-btn" class="absolute top-8 right-8 text-white">
-            <i data-lucide="x" class="w-8 h-8"></i>
-        </button>
-        <a href="#about" class="mobile-link hover:text-studio-gold transition-colors">About</a>
-        <a href="#services" class="mobile-link hover:text-studio-gold transition-colors">Services</a>
-        <a href="#gallery" class="mobile-link hover:text-studio-gold transition-colors">Gallery</a>
-        <a href="#reviews" class="mobile-link hover:text-studio-gold transition-colors">Reviews</a>
-        <a href="#booking" class="mobile-link hover:text-studio-gold transition-colors">Book Appointment</a>
-    </div>
+<!-- Loader -->
+<div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-studio-dark transition-opacity duration-1000">
 
-    <main>
-        <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <div class="absolute inset-0 bg-black/60 z-10"></div>
-                <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Luxury Beauty" class="w-full h-full object-cover object-center scale-105" id="hero-img">
-            </div>
-            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
-                <span class="gsap-hero text-studio-gold tracking-[0.3em] uppercase text-sm mb-4 block">Visakhapatnam</span>
-                <h1 class="gsap-hero font-serif text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">Luxury Beauty <br><span class="italic text-studio-gold">Experience</span></h1>
-                <p class="gsap-hero text-gray-300 text-lg md:text-xl font-light tracking-wide mb-10 max-w-2xl mx-auto">Professional Makeup, Skin & Hair Services</p>
-                <div class="gsap-hero flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto">
-                    <a href="#booking" class="btn-primary w-full sm:w-auto text-center py-4 px-10 tracking-widest uppercase text-sm transition-all duration-300">Book Appointment</a>
-                    <a href="#services" class="btn-secondary w-full sm:w-auto text-center py-4 px-10 tracking-widest uppercase text-sm transition-all duration-300">View Services</a>
-                </div>
-            </div>
-        </section>
+<div class="flex flex-col items-center">
 
-        <section id="about" class="py-24 md:py-32 px-6 bg-studio-surface">
-            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                <div class="gsap-fade-up relative">
-                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Salon Interior" class="w-full h-[600px] object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute -bottom-8 -right-8 bg-studio-dark p-8 border border-studio-gold/20 hidden md:block">
-                        <p class="font-serif text-4xl text-studio-gold">4.7</p>
-                        <p class="text-sm tracking-widest uppercase text-gray-400 mt-2">1650+ Reviews</p>
-                    </div>
-                </div>
-                <div class="gsap-fade-up">
-                    <h2 class="font-serif text-4xl md:text-5xl mb-6">The Art of <span class="text-studio-gold italic">Elegance</span></h2>
-                    <p class="text-gray-400 font-light leading-relaxed mb-8 text-lg">
-                        Located in the heart of Visakhapatnam, J Studio Luxury Beauty Studio redefines glamour with unparalleled artistry. Our expert professionals use only premium products to deliver personalized beauty experiences tailored to your unique style.
-                    </p>
-                    <div class="grid grid-cols-2 gap-8 mb-8">
-                        <div>
-                            <i data-lucide="award" class="w-6 h-6 text-studio-gold mb-4"></i>
-                            <h4 class="font-serif text-xl mb-2">Expert Artists</h4>
-                            <p class="text-sm text-gray-500">Highly trained professionals with years of experience.</p>
-                        </div>
-                        <div>
-                            <i data-lucide="sparkles" class="w-6 h-6 text-studio-gold mb-4"></i>
-                            <h4 class="font-serif text-xl mb-2">Premium Products</h4>
-                            <p class="text-sm text-gray-500">Only the finest luxury brands for your skin and hair.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4 text-xs tracking-widest uppercase text-studio-gold">
-                        <span class="flex items-center gap-2 border border-studio-gold/30 px-3 py-1 rounded-full"><i data-lucide="heart" class="w-3 h-3"></i> LGBTQ+ Friendly</span>
-                        <span class="flex items-center gap-2 border border-studio-gold/30 px-3 py-1 rounded-full"><i data-lucide="users" class="w-3 h-3"></i> Women-Owned</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="w-16 h-16 border-t-2 border-r-2 border-studio-gold rounded-full animate-spin"></div>
 
-        <section id="services" class="py-24 md:py-32 px-6">
-            <div class="max-w-7xl mx-auto text-center mb-16 gsap-fade-up">
-                <span class="text-studio-gold tracking-[0.2em] uppercase text-xs mb-4 block">Our Offerings</span>
-                <h2 class="font-serif text-4xl md:text-5xl">Bespoke <span class="italic text-studio-gold">Services</span></h2>
-            </div>
-            <div id="services-grid" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            </div>
-        </section>
+<h1 class="mt-6 font-serif text-2xl tracking-widest text-studio-gold">
+J STUDIO
+</h1>
 
-        <section id="why-us" class="py-24 bg-studio-surface relative overflow-hidden">
-            <div class="absolute inset-0 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-attachment: fixed;"></div>
-            <div class="relative z-10 max-w-7xl mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-studio-gold/20">
-                    <div class="gsap-stagger-item py-6">
-                        <h3 class="font-serif text-4xl text-studio-gold mb-2">1650+</h3>
-                        <p class="tracking-widest uppercase text-sm text-gray-400">Happy Clients</p>
-                    </div>
-                    <div class="gsap-stagger-item py-6">
-                        <h3 class="font-serif text-4xl text-studio-gold mb-2">10+</h3>
-                        <p class="tracking-widest uppercase text-sm text-gray-400">Expert Staff</p>
-                    </div>
-                    <div class="gsap-stagger-item py-6">
-                        <h3 class="font-serif text-4xl text-studio-gold mb-2">100%</h3>
-                        <p class="tracking-widest uppercase text-sm text-gray-400">Premium Brands</p>
-                    </div>
-                    <div class="gsap-stagger-item py-6">
-                        <h3 class="font-serif text-4xl text-studio-gold mb-2">4.7</h3>
-                        <p class="tracking-widest uppercase text-sm text-gray-400">Star Rating</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+</div>
+</div>
 
-        <section id="gallery" class="py-24 md:py-32 px-2 md:px-6">
-            <div class="max-w-7xl mx-auto text-center mb-16 gsap-fade-up">
-                <h2 class="font-serif text-4xl md:text-5xl mb-4">The <span class="italic text-studio-gold">Gallery</span></h2>
-                <p class="text-gray-400 tracking-wide">Follow us on Instagram <a href="#" class="text-studio-gold hover:underline">@JStudioVizag</a></p>
-            </div>
-            <div id="gallery-grid" class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-            </div>
-        </section>
 
-        <section id="reviews" class="py-24 md:py-32 bg-studio-surface px-6">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16 gsap-fade-up">
-                    <h2 class="font-serif text-4xl md:text-5xl mb-6">Client <span class="italic text-studio-gold">Testimonials</span></h2>
-                    <div class="flex justify-center gap-1 text-studio-gold mb-4">
-                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
-                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
-                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
-                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
-                        <i data-lucide="star-half" class="fill-current w-5 h-5"></i>
-                    </div>
-                    <p class="text-gray-400">Rated 4.7 out of 5 from over 1,650 reviews</p>
-                </div>
-                <div id="reviews-container" class="grid md:grid-cols-3 gap-8">
-                </div>
-            </div>
-        </section>
+<!-- Navbar -->
+<nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-6 px-8 flex justify-between items-center bg-transparent">
 
-        <section id="booking-contact" class="py-24 md:py-32 px-6">
-            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
-                <div class="gsap-fade-up" id="booking">
-                    <h2 class="font-serif text-4xl mb-8">Reserve an <span class="italic text-studio-gold">Appointment</span></h2>
-                    <form id="booking-form" class="space-y-6">
-                        <div>
-                            <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Full Name</label>
-                            <input type="text" id="name" required class="w-full bg-transparent border-b border-gray-700 focus:border-studio-gold py-3 text-white outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Phone Number</label>
-                            <input type="tel" id="phone" required class="w-full bg-transparent border-b border-gray-700 focus:border-studio-gold py-3 text-white outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Service Needed</label>
-                            <select id="service" required class="w-full bg-studio-dark border-b border-gray-700 focus:border-studio-gold py-3 text-white outline-none transition-colors appearance-none cursor-pointer">
-                                <option value="" disabled selected>Select a Service</option>
-                            </select>
-                        </div>
-                        <div class="grid grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Date</label>
-                                <input type="date" id="date" required class="w-full bg-transparent border-b border-gray-700 focus:border-studio-gold py-3 text-white outline-none transition-colors dark-date">
-                            </div>
-                            <div>
-                                <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Time</label>
-                                <input type="time" id="time" required class="w-full bg-transparent border-b border-gray-700 focus:border-studio-gold py-3 text-white outline-none transition-colors dark-date">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn-primary w-full py-4 tracking-widest uppercase text-sm mt-8 transition-all duration-300">Confirm Booking</button>
-                    </form>
-                    <div id="form-success" class="hidden mt-6 p-4 border border-green-500/30 bg-green-500/10 text-green-400 text-sm tracking-wide">
-                        Your appointment request has been received. We will contact you shortly to confirm.
-                    </div>
-                </div>
+<a href="#" class="font-serif text-2xl tracking-widest text-white hover:text-studio-gold transition-colors">
+J STUDIO
+</a>
 
-                <div class="gsap-fade-up" id="contact">
-                    <h2 class="font-serif text-4xl mb-8">Find <span class="italic text-studio-gold">Us</span></h2>
-                    <div class="space-y-8">
-                        <div class="flex items-start gap-4">
-                            <i data-lucide="map-pin" class="w-6 h-6 text-studio-gold shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-serif text-xl mb-2">Location</h4>
-                                <p class="text-gray-400 font-light leading-relaxed">1st Floor, 9-29-18, beside New Vizag Central,<br>VIP Rd, above TVS Showroom, Balaji Nagar,<br>Siripuram, Visakhapatnam,<br>Andhra Pradesh 530003</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <i data-lucide="phone" class="w-6 h-6 text-studio-gold shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-serif text-xl mb-2">Contact</h4>
-                                <p class="text-gray-400 font-light">+91 98826 89999</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <i data-lucide="clock" class="w-6 h-6 text-studio-gold shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-serif text-xl mb-2">Hours</h4>
-                                <p class="text-gray-400 font-light">Open Daily: 10:00 AM - 9:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-8 h-64 w-full grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500 border border-studio-gold/20">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.9673967911634!2d83.3155106!3d17.7289551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433cc17f2e15%3A0x6b83f3e69f80ef28!2sVIP%20Rd%2C%20Balaji%20Nagar%2C%20Siripuram%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530003!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+<div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
 
-    <footer class="bg-black border-t border-white/5 pt-16 pb-8 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
-            <div class="col-span-1 md:col-span-2">
-                <h2 class="font-serif text-3xl tracking-widest text-white mb-6">J STUDIO</h2>
-                <p class="text-gray-500 font-light max-w-sm mb-8">Elevating beauty through artistry, luxury, and personalized care in Visakhapatnam.</p>
-                <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:border-studio-gold hover:text-studio-gold transition-colors">
-                        <i data-lucide="instagram" class="w-4 h-4"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:border-studio-gold hover:text-studio-gold transition-colors">
-                        <i data-lucide="facebook" class="w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <h4 class="text-xs tracking-widest uppercase text-studio-gold mb-6">Quick Links</h4>
-                <ul class="space-y-4 text-gray-400 font-light text-sm">
-                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
-                    <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
-                    <li><a href="#booking" class="hover:text-white transition-colors">Book Appointment</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-xs tracking-widest uppercase text-studio-gold mb-6">Contact</h4>
-                <ul class="space-y-4 text-gray-400 font-light text-sm">
-                    <li>+91 98826 89999</li>
-                    <li>Siripuram, Visakhapatnam</li>
-                    <li>Open Daily until 9 PM</li>
-                </ul>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 tracking-wide">
-            <p>&copy; 2026 J Studio Luxury Beauty Studio. All rights reserved.</p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-300">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+<a href="#about" class="hover:text-studio-gold transition-colors">About</a>
 
-    <a href="https://wa.me/919882689999" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(22,163,74,0.4)] hover:scale-110 transition-transform duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="m16 13-2-2-2 2-2-2-2 2"/></svg>
-    </a>
+<a href="#services" class="hover:text-studio-gold transition-colors">Services</a>
 
-    <script type="module" src="main.js"></script>
+<a href="#gallery" class="hover:text-studio-gold transition-colors">Gallery</a>
+
+<a href="#reviews" class="hover:text-studio-gold transition-colors">Reviews</a>
+
+<a href="#booking" class="hover:text-studio-gold transition-colors">Book</a>
+
+</div>
+
+<button id="mobile-menu-btn" class="md:hidden text-white">
+<i data-lucide="menu" class="w-6 h-6"></i>
+</button>
+
+</nav>
+
+
+<!-- Hero -->
+<section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+
+<div class="absolute inset-0 z-0">
+
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+
+<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=2000&q=80"
+class="w-full h-full object-cover scale-105">
+
+</div>
+
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+
+<span class="text-studio-gold tracking-[0.3em] uppercase text-sm mb-4 block">
+Visakhapatnam
+</span>
+
+<h1 class="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">
+Luxury Beauty
+<br>
+<span class="italic text-studio-gold">
+Experience
+</span>
+</h1>
+
+<p class="text-gray-300 text-lg md:text-xl font-light tracking-wide mb-10 max-w-2xl mx-auto">
+Professional Makeup, Skin & Hair Services
+</p>
+
+</div>
+
+</section>
+
+
+<!-- Gallery -->
+<section id="gallery" class="py-24 md:py-32 px-2 md:px-6">
+
+<div class="max-w-7xl mx-auto text-center mb-16">
+
+<h2 class="font-serif text-4xl md:text-5xl mb-4">
+The <span class="italic text-studio-gold">Gallery</span>
+</h2>
+
+<p class="text-gray-400 tracking-wide">
+
+Follow us on Instagram 
+
+<a href="https://www.instagram.com/jstudio_vizag/?hl=en"
+target="_blank"
+class="text-studio-gold hover:underline">
+
+@jstudio_vizag
+
+</a>
+
+</p>
+
+</div>
+
+
+<div id="gallery-grid" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+<iframe src="https://www.instagram.com/p/DV0-uATiTKt/embed"
+width="100%"
+height="480"
+frameborder="0"
+scrolling="no"
+allowtransparency="true">
+</iframe>
+
+
+<iframe src="https://www.instagram.com/p/DVvFuJzCbdF/embed"
+width="100%"
+height="480"
+frameborder="0"
+scrolling="no"
+allowtransparency="true">
+</iframe>
+
+
+<iframe src="https://www.instagram.com/p/DTvOE8bE2PM/embed"
+width="100%"
+height="480"
+frameborder="0"
+scrolling="no"
+allowtransparency="true">
+</iframe>
+
+
+</div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="py-24 px-6">
+
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+
+
+<div>
+
+<h2 class="font-serif text-4xl mb-8">
+Find <span class="italic text-studio-gold">Us</span>
+</h2>
+
+
+<div class="flex items-start gap-4 mb-6">
+
+<i data-lucide="phone" class="w-6 h-6 text-studio-gold shrink-0 mt-1"></i>
+
+<div>
+
+<h4 class="font-serif text-xl mb-2">Contact</h4>
+
+<a href="tel:+919882689999"
+class="text-gray-400 font-light hover:text-studio-gold">
+
++91 98826 89999
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="h-64 w-full grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500 border border-studio-gold/20">
+
+<iframe
+src="https://www.google.com/maps?q=jstudio+vizag&output=embed"
+width="100%"
+height="100%"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-black border-t border-white/5 pt-16 pb-8 px-6">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+
+<div class="col-span-1 md:col-span-2">
+
+<h2 class="font-serif text-3xl tracking-widest text-white mb-6">
+J STUDIO
+</h2>
+
+<p class="text-gray-500 font-light max-w-sm mb-8">
+Elevating beauty through artistry, luxury, and personalized care in Visakhapatnam.
+</p>
+
+
+<div class="flex gap-4">
+
+
+<a href="https://www.instagram.com/jstudio_vizag/?hl=en"
+target="_blank"
+class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:border-studio-gold hover:text-studio-gold transition-colors">
+
+<i data-lucide="instagram" class="w-4 h-4"></i>
+
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<a href="https://wa.me/919882689999"
+target="_blank"
+class="fixed bottom-6 right-6 z-40 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center">
+
+WhatsApp
+
+</a>
+
+
+<script src="//www.instagram.com/embed.js"></script>
+
+<script type="module" src="main.js"></script>
+
 </body>
 </html>
